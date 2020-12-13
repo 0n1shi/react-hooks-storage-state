@@ -1,0 +1,23 @@
+{
+  "name": "storage-state",
+  "version": "1.0.0",
+  "description": "library for state management which has interface like React-hooks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0n1shi/storage-state.git"
+  },
+  "author": "Kazuki Onishi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0n1shi/storage-state/issues"
+  },
+  "homepage": "https://github.com/0n1shi/storage-state#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "react": "^16.13.1"
+  }
+}
