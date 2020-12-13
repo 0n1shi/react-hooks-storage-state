@@ -1,6 +1,6 @@
 {
   "name": "react-hooks-storage-state",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "library for state management which has interface like React-hooks.",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,8 @@
     "url": "https://github.com/0n1shi/storage-state/issues"
   },
   "homepage": "https://github.com/0n1shi/storage-state#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "react": "^16.13.1"
-  }
+  "dependencies": {
+    "react": "^17.0.1"
+  },
+  "devDependencies": {}
 }

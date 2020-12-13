@@ -1,18 +1,24 @@
-import React from "react";
+'use strict';
 
-const useLocalStorageState = (defaultValue, key) => {
+import React from 'react';
+
+function useStorageState(key, defaultValue, storage) {
     const [value, setValue] = React.useState(() => {
-        const stickyValue = window.localStorage.getItem(key);
+        const stickyValue = storage.getItem(key);
         return stickyValue !== null
             ? JSON.parse(stickyValue)
             : defaultValue;
     });
     React.useEffect(() => {
-        window.localStorage.setItem(key, JSON.stringify(value));
+        storage.setItem(key, JSON.stringify(value));
     }, [key, value]);
     return [value, setValue];
 }
 
-module.exports = {
-    useLocalStorageState: useLocalStorageState
-};
+export function useLocalStorageState(key, defaultValue = '') {
+    return useStorageState(key, defaultValue, window.localStorage);
+}
+
+export function useSessionStorageState(key, defaultValue = '') {
+    return useStorageState(key, defaultValue, window.sessionStorage);
+}
