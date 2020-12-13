@@ -1,6 +1,6 @@
 import React from "react";
 
-useLocalStorageState = (defaultValue, key) => {
+const useLocalStorageState = (defaultValue, key) => {
     const [value, setValue] = React.useState(() => {
         const stickyValue = window.localStorage.getItem(key);
         return stickyValue !== null

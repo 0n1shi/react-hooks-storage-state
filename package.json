@@ -1,5 +1,5 @@
 {
-  "name": "storage-state",
+  "name": "react-hooks-storage-state",
   "version": "1.0.0",
   "description": "library for state management which has interface like React-hooks.",
   "main": "index.js",
