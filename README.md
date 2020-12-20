@@ -1,6 +1,6 @@
 # React hooks storage state
 
-![](https://img.shields.io/badge/version-v1.4.2-green) ![](https://img.shields.io/badge/license-MIT-blue)
+![](https://img.shields.io/badge/version-v1.4.3-green) ![](https://img.shields.io/badge/license-MIT-blue)
 
 Library with web storage for state management with interface like React-hooks.
 
@@ -12,7 +12,7 @@ $ npm install react-hooks-storage-state
 
 ## Functions
 
-```ts
+```typescript
 export function useLocalStorageState<T>(key: string, defaultValue: T): [T, React.Dispatch<T>];
 export function useSessionStorageState<T>(key: string, defaultValue: T): [T, React.Dispatch<T>];
 ```
