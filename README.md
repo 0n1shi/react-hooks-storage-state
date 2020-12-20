@@ -1,3 +1,31 @@
-# storage-state
+# React hooks storage state
 
-library for state management which has interface like React-hooks.
+![](https://img.shields.io/badge/version-v1.4.1-green) ![](https://img.shields.io/badge/license-MIT-blue)
+
+Library with web storage for state management with interface like React-hooks.
+
+## Functions
+
+```ts
+export function useLocalStorageState<T>(key: string, defaultValue: T): [T, React.Dispatch<T>];
+export function useSessionStorageState<T>(key: string, defaultValue: T): [T, React.Dispatch<T>];
+```
+
+## Example
+
+```tsx
+import React from 'react';
+import logo from './logo.svg';
+import { useSessionStorageState } from 'react-hooks-storage-state';
+
+function App() {
+  const [msg, setMsg] = useSessionStorageState('msg', '');
+  return (
+    <div>
+      <input type="text" value={msg} onChange={e => setMsg(e.target.value)} />
+    </div>
+  );
+}
+
+export default App;
+```
