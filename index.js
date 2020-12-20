@@ -15,10 +15,10 @@ function useStorageState(key, defaultValue, storage) {
     return [value, setValue];
 }
 
-export function useLocalStorageState(key, defaultValue = '') {
+export function useLocalStorageState(key, defaultValue) {
     return useStorageState(key, defaultValue, window.localStorage);
 }
 
-export function useSessionStorageState(key, defaultValue = '') {
+export function useSessionStorageState(key, defaultValue) {
     return useStorageState(key, defaultValue, window.sessionStorage);
 }
