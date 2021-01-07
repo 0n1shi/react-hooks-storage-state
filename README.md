@@ -21,7 +21,6 @@ export function useSessionStorageState<T>(key: string, defaultValue: T): [T, Rea
 
 ```tsx
 import React from 'react';
-import logo from './logo.svg';
 import { useSessionStorageState } from 'react-hooks-storage-state';
 
 function App() {
